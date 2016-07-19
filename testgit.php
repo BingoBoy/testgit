@@ -8,7 +8,7 @@ Version: 1.01
 Author URI: http://tyfon.no
 */
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
-/*require_once 'vendor/autoload.php';*/
+require_once 'vendor/autoload.php';
 class MyGithub extends \Github\Client {};
 function github_issues_func(  $atts, $gh=null ) {
     // Conditionally instantiate our class
